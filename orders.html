@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders Management</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <aside class="sidebar">
+        <div class="brand-logo">⚡ <span>ShopAdmin</span></div>
+        <ul class="nav-menu">
+            <li><a href="index.html">📊 <span>Dashboard</span></a></li>
+            <li><a href="products.html">📦 <span>Products</span></a></li>
+            <li class="active"><a href="orders.html">🛒 <span>Orders</span></a></li>
+            <li><a href="customers.html">👥 <span>Customers</span></a></li>
+            <li><a href="reports.html">📈 <span>Reports</span></a></li>
+            <li><a href="settings.html">⚙️ <span>Settings</span></a></li>
+        </ul>
+        <div class="sidebar-footer">
+            <a href="#" class="logout-btn">🚪 <span>Logout</span></a>
+        </div>
+    </aside>
+
+    <div class="main-wrapper">
+        <header class="top-navbar">
+            <div class="search-box">
+                <input type="text" placeholder="Search orders...">
+            </div>
+            <div class="nav-profile">
+                <div class="notification-icon">🔔</div>
+                <div class="profile-info">
+                    <div class="profile-avatar">A</div>
+                    <span>Admin Name ▾</span>
+                </div>
+            </div>
+        </header>
+
+        <main class="content">
+            <div class="page-header">
+                <h1 class="page-title">Orders Management</h1>
+            </div>
+
+            <div class="table-card">
+                <div class="responsive-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Order ID</th>
+                                <th>Customer</th>
+                                <th>Product</th>
+                                <th>Date</th>
+                                <th>Total</th>
+                                <th>Payment Method</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#ORD-1001</td>
+                                <td>Ali Khan</td>
+                                <td>Wireless Headphones</td>
+                                <td>Oct 24, 2026</td>
+                                <td>$120.00</td>
+                                <td>Credit Card</td>
+                                <td><span class="badge badge-success">Completed</span></td>
+                                <td><button class="btn btn-outline btn-sm">View</button></td>
+                            </tr>
+                            <tr>
+                                <td>#ORD-1002</td>
+                                <td>Sara Ahmed</td>
+                                <td>Smart Watch</td>
+                                <td>Oct 24, 2026</td>
+                                <td>$250.00</td>
+                                <td>PayPal</td>
+                                <td><span class="badge badge-warning">Pending</span></td>
+                                <td><button class="btn btn-outline btn-sm">View</button></td>
+                            </tr>
+                            <tr>
+                                <td>#ORD-1003</td>
+                                <td>Usman Malik</td>
+                                <td>Mechanical Keyboard</td>
+                                <td>Oct 23, 2026</td>
+                                <td>$85.00</td>
+                                <td>Cash on Delivery</td>
+                                <td><span class="badge badge-danger">Cancelled</span></td>
+                                <td><button class="btn btn-outline btn-sm">View</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
