@@ -45,7 +45,7 @@
 /* ---------- RESET ---------- */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; overflow-x: hidden; max-width: 100%; }
 
 body {
   font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Arial, sans-serif;
@@ -439,6 +439,7 @@ button, input, select { font-family: inherit; font-size: inherit; }
   border: 1px solid var(--gray-200);
   box-shadow: var(--shadow-sm);
   padding: 24px;
+   min-width: 0;
 }
 
 .panel-header {
